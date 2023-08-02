@@ -1,0 +1,113 @@
+body {
+    margin: 20px;
+    /*
+    Challenge:
+    Find a web safe font you like, and add it 
+    to your card.
+    */
+    font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;
+    /* font-weight: bolder; */
+}
+
+.avatar {
+    width: 140px;
+    /* border-top: 30px solid #ccd5ae;
+    border-left: 30px solid #ccd5ae; */
+    border: 2px solid #fefae0;
+    border-radius: 150px;
+    
+}
+
+.card {
+    width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    background: #faedcd;
+    color: #231f20;
+    border-bottom: 6px solid #ccd5ae;
+    border-radius: 2%;
+    
+        
+    /*
+    Challenge:
+    Find a color palette you like on Coolors.co
+    and use it in your business card.
+     */
+}
+/* 
+@keyframes shadow-animation {
+    0% {box-shadow: 2px 2px 0px #e7c8a0;}
+    25% {box-shadow: 5px -5px 0px #e7c8a0;}
+    50% {
+        box-shadow: -5px -5px 0px #e7c8a0;
+        }
+    75% {box-shadow: -5px 5px 0px #e7c8a0;}
+    100% {box-shadow: 2px 2x 0px #e7c8a0;}
+    
+} */
+
+@keyframes shadow-animation {
+    0% {box-shadow: none}
+    50% {box-shadow: -5px 0px 5px #e7c8a0,0px 5px 5px #e7c8a0,5px 0px 5px #e7c8a0,0px -5px 5px #e7c8a0; }
+    100% {box-shadow: none}
+}
+
+
+
+.avatar:hover {
+    /* width: 145px; */
+    /* box-shadow: 5px 5px 5px #e7c8a0; */
+    animation-name: shadow-animation;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    /* animation-iteration-count: 3; */
+}
+
+.details {
+    text-shadow: 2px 2px #fefae0;
+}
+
+.details:hover {
+    text-shadow: 2px 2px 2px #e7c8a0;
+}
+
+
+.border-blue {
+    border: 1px dotted blue;
+}
+
+@keyframes elastic {
+    0% {border-bottom: 6px solid #ccd5ae;}
+    50% {border-bottom: 25px solid #ccd5ae;}
+    100% {border-bottom: 6px solid #ccd5ae;}
+}
+
+.card:hover {
+    /* box-shadow: -5px 0px 5px #e7c8a0,0px 5px 5px #e7c8a0,5px 0px 5px #e7c8a0,0px -5px 5px #e7c8a0; */
+    /* border-bottom: 50px solid #ccd5ae; */
+    animation-name: elastic;
+    animation-duration: 1s;
+    
+    
+}
+
+/*
+Stretch goals:
+Find other ways you can personalize 
+the design of your business card, e.g.:
+- change the border(s)
+- add border radius
+- shuffle the layout
+- shadows        🤯
+- hover effects  🤯🤯
+- animations     🤯🤯🤯
+*/
+
+/*
+Final challenge:
+Download the code to your local computer and place it
+in a folder called "business-card"
+*/
